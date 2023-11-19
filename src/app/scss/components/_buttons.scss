@@ -1,0 +1,44 @@
+/* Buttons */
+.btn{
+    border-radius: 8px;
+    padding: 10px 14px;
+    border: 1px solid var(--dark-600);
+    background-color: var(--dark-600);
+    color: var(--white);
+    transition: $transition;
+
+    &:hover{
+        background-color: var(--dark-300);
+        cursor: pointer;
+        transition: $transition;
+    }
+
+    &:active{
+        background-color: var(--gray);
+        transition: $transition;
+    }
+
+    &.primary{
+        border: 1px solid var(--orange-200);
+        background-color: var(--orange-200);
+        color: var(--dark-600);
+
+        &:hover{
+            background-color: var(--orange-50);
+            border: 1px solid var(--orange-50);
+            transition: $transition;
+        }
+    }
+
+    &.ghost{
+        border: 1px solid var(--white);
+        background-color: transparent;
+        color: var(--white);
+
+        &:hover{
+            background-color: var(--white-50);
+            border: 1px solid var(--white);
+            transition: $transition;
+        }
+    }
+}

@@ -1,1 +1,56 @@
+/* Variables */
+:root {
+  --dark-900: #01080E;
+  --dark-600: #011627;
+  --dark-300: #011221;
+  --gray: #607B96;
+  --green-500: #3C9D93;
+  --purple: #4D5BCE;
+  --white: #FFFFFF;
+  --white-50: rgba(255, 255, 255, 0.2196078431);
+  --orange-200: #FEA55F;
+  --orange-50: #fbb37c;
+  --green-200: #43D9AD;
+  --red-200: #E99287;
+  --blue-200: #C98BDF;
+}
 
+/* ==== COMPONENTS ==== */
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  padding: 10px 14px;
+  border: 1px solid var(--dark-600);
+  background-color: var(--dark-600);
+  color: var(--white);
+  transition: all ease 0.4s;
+}
+.btn:hover {
+  background-color: var(--dark-300);
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+.btn:active {
+  background-color: var(--gray);
+  transition: all ease 0.4s;
+}
+.btn.primary {
+  border: 1px solid var(--orange-200);
+  background-color: var(--orange-200);
+  color: var(--dark-600);
+}
+.btn.primary:hover {
+  background-color: var(--orange-50);
+  border: 1px solid var(--orange-50);
+  transition: all ease 0.4s;
+}
+.btn.ghost {
+  border: 1px solid var(--white);
+  background-color: transparent;
+  color: var(--white);
+}
+.btn.ghost:hover {
+  background-color: var(--white-50);
+  border: 1px solid var(--white);
+  transition: all ease 0.4s;
+}
