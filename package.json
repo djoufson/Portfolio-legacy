@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "dotnet test",
+    "compile-sass": "sass --no-source-map --watch src/app/scss/:src/app/wwwroot/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Djoufson/Portfolio.git"
+  },
+  "author": "Djoufson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Djoufson/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Djoufson/Portfolio#readme",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}
