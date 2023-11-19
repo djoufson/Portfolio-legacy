@@ -12,6 +12,7 @@ $orange-50: #fbb37c;
 $green-200: #43D9AD;
 $red-200: #E99287;
 $blue-200: #C98BDF;
+$lines: #1E2D3D;
 
 /* Variables */
 :root {
@@ -28,6 +29,7 @@ $blue-200: #C98BDF;
     --green-200: #{$green-200};
     --red-200: #{$red-200};
     --blue-200: #{$blue-200};
+    --lines: #{$lines};
 }
 
 $transition: all ease .4s;
