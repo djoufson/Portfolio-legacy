@@ -1,4 +1,11 @@
 @import 'variables';
+@import 'breakpoints';
+
+/* ==== GLOBAL STYLES ==== */
+@import 'global';
+
+/* ==== UTILITIES ==== */
+@import 'utilities';
 
 /* ==== COMPONENTS ==== */
 @import 'components/buttons';

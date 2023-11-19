@@ -15,6 +15,21 @@
   --blue-200: #C98BDF;
 }
 
+/* ==== GLOBAL STYLES ==== */
+body {
+  background-color: var(--dark-900);
+  color: var(--gray);
+}
+
+/* ==== UTILITIES ==== */
+.text-center {
+  text-align: center;
+}
+
+.prefix-underscore::before {
+  content: "_";
+}
+
 /* ==== COMPONENTS ==== */
 /* Buttons */
 .btn {
