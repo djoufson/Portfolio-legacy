@@ -129,6 +129,8 @@ table {
 body {
   background-color: var(--dark-900);
   color: var(--gray);
+  padding: 20px;
+  font-family: "Fira Code", monospace;
 }
 
 /* ==== UTILITIES ==== */
@@ -138,6 +140,21 @@ body {
 
 .prefix-underscore::before {
   content: "_";
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+  background-color: var(--dark-300);
+  border: 1px solid var(--lines);
+  border-radius: 8px;
+}
+.container .full {
+  min-height: 100%;
+}
+
+.page {
+  min-height: min(900px, 100vh - 40px);
 }
 
 /* ==== COMPONENTS ==== */

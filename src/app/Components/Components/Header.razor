@@ -1,30 +1,28 @@
 @rendermode InteractiveServer
 
-<nav class="nav-bar @NavbarClass">
+<nav class="nav-bar @ActiveClass">
     <div class="name">
         <a class="link" href="/">djoufson-che</a>
         <button class="hamburger" @onclick=OnToggleClicked>
-            <span class=@HamburgerClass></span>
+            <span class=@ActiveClass></span>
         </button>
     </div>
     <ul class="nav-links">
         <a href="/" class="prefix-underscore link active">hello</a>
-        <a href="#" class="prefix-underscore link">about-me</a>
-        <a href="#" class="prefix-underscore link last-link">projects</a>
+        <a href="/" class="prefix-underscore link">about-me</a>
+        <a href="/" class="prefix-underscore link last-link">projects</a>
     </ul>
     <div class="contact">
-        <a href="#" class="prefix-underscore link">contact-me</a>
+        <a href="/" class="prefix-underscore link">contact-me</a>
     </div>
     @* Footer here *@
 </nav>
 
 @code{
-    private string HamburgerClass = string.Empty;
-    private string NavbarClass = string.Empty;
+    private string ActiveClass = string.Empty;
 
     private void OnToggleClicked()
     {
-        HamburgerClass = HamburgerClass == string.Empty ? "active" : string.Empty;
-        NavbarClass = HamburgerClass;
+        ActiveClass = ActiveClass == string.Empty ? "active" : string.Empty;
     }
 }
