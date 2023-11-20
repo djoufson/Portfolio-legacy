@@ -1,4 +1,5 @@
 /* About page */
+
 .about{
     .navigation-toggle{
         display: none;
@@ -8,13 +9,43 @@
         display: none;
     }
 
-    h1{
+    > h1{
         padding: $padding-sm $padding;
     }
 
-    @include md{    
+    @include md{
+        display: flex;
+        height: 100%;
         .navigation-toggle{
             display: block;
+            min-width: $sidebar-width;
+            height: 100%;
+            border-right: 1px solid var(--lines);
+
+            h2{
+                padding: 14px $padding;
+                color: var(--gray);
+                border-bottom: 1px solid var(--lines);
+                transition: $transition;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: var(--dark-600);
+                    transition: $transition;
+                }
+
+                &.active{
+                    color: var(--white-200);
+                }
+            }
+
+            @for $i from 0 through 9 {
+                &.active-#{$i}{
+                    .link-#{$i}{
+                        color: var(--white-200);
+                    }
+                }
+            }
         }
 
         .toggle-shared-content{
@@ -22,6 +53,9 @@
         }
 
         .mobile-toggle{
+            display: none;
+        }
+        > h1{
             display: none;
         }
     }

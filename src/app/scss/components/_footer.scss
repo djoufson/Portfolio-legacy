@@ -43,7 +43,7 @@ footer{
     @include md{
         grid-template-columns: auto auto 1fr auto;
         >span{
-            min-width: 250px;
+            padding: 0 $padding;
         }
 
         .github{

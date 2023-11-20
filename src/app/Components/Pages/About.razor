@@ -18,12 +18,12 @@
         </ToggleItem>
     </Toggle>
 
-    <div class="navigation-toggle">
-        <h2 @onclick="() => Navigate(0)">Personnal Infos</h2>
-        <h2 @onclick="() => Navigate(1)">Professionnal Infos</h2>
-        <h2 @onclick="() => Navigate(2)">Hobbies Infos</h2>
-        <h2 @onclick="() => Navigate(3)">Contacts</h2>
-    </div>
+    <aside class="navigation-toggle active-@TabIndex">
+        <h2 @onclick="() => Navigate(0)" class="link-0">Personnal Infos</h2>
+        <h2 @onclick="() => Navigate(1)" class="link-1">Professionnal Infos</h2>
+        <h2 @onclick="() => Navigate(2)" class="link-2">Hobbies Infos</h2>
+        <h2 @onclick="() => Navigate(3)" class="link-3">Contacts</h2>
+    </aside>
     <div class="toggle-shared-content">
         @switch(TabIndex){
             case 0:

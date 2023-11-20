@@ -468,7 +468,7 @@ footer {
     grid-template-columns: auto auto 1fr auto;
   }
   .footer > span {
-    min-width: 250px;
+    padding: 0 2rem;
   }
   .footer .github {
     grid-column: 4;
@@ -571,17 +571,71 @@ footer {
 .about .toggle-shared-content {
   display: none;
 }
-.about h1 {
+.about > h1 {
   padding: 1rem 2rem;
 }
 @media (min-width: 730px) {
+  .about {
+    display: flex;
+    height: 100%;
+  }
   .about .navigation-toggle {
     display: block;
+    min-width: 250px;
+    height: 100%;
+    border-right: 1px solid var(--lines);
+  }
+  .about .navigation-toggle h2 {
+    padding: 14px 2rem;
+    color: var(--gray);
+    border-bottom: 1px solid var(--lines);
+    transition: all ease 0.4s;
+    cursor: pointer;
+  }
+  .about .navigation-toggle h2:hover {
+    background-color: var(--dark-600);
+    transition: all ease 0.4s;
+  }
+  .about .navigation-toggle h2.active {
+    color: var(--white-200);
+  }
+  .about .navigation-toggle.active-0 .link-0 {
+    color: var(--white-200);
+  }
+  .about .navigation-toggle.active-1 .link-1 {
+    color: var(--white-200);
+  }
+  .about .navigation-toggle.active-2 .link-2 {
+    color: var(--white-200);
+  }
+  .about .navigation-toggle.active-3 .link-3 {
+    color: var(--white-200);
+  }
+  .about .navigation-toggle.active-4 .link-4 {
+    color: var(--white-200);
+  }
+  .about .navigation-toggle.active-5 .link-5 {
+    color: var(--white-200);
+  }
+  .about .navigation-toggle.active-6 .link-6 {
+    color: var(--white-200);
+  }
+  .about .navigation-toggle.active-7 .link-7 {
+    color: var(--white-200);
+  }
+  .about .navigation-toggle.active-8 .link-8 {
+    color: var(--white-200);
+  }
+  .about .navigation-toggle.active-9 .link-9 {
+    color: var(--white-200);
   }
   .about .toggle-shared-content {
     display: block;
   }
   .about .mobile-toggle {
+    display: none;
+  }
+  .about > h1 {
     display: none;
   }
 }
