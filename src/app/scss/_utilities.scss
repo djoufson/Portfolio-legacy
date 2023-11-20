@@ -26,6 +26,17 @@
     grid-template-rows: auto 1fr auto;
 }
 
+.prompt::before{
+    content: '> ';
+}
+
+.comment{
+    color: var(--gray);
+    &::before{
+        content: '// ';
+    }
+}
+
 .link{
     padding: .8rem 2rem;
     color: var(--gray);
@@ -38,6 +49,22 @@
     }
 
     &.active{
-        color: var(--white);
+        color: var(--white-200);
     }
+}
+
+.label-text{
+    font-size: $small;
+}
+
+.body-text{
+    font-size: $medium;
+}
+
+.headline-text{
+    font-size: $x-large;
+}
+
+.subheadline-text{
+    font-size: $large;
 }

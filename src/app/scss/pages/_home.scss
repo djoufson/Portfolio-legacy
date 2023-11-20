@@ -1,0 +1,83 @@
+.hero{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/BackgroundBlurs.png);
+    background-repeat: no-repeat;
+
+    @include md{
+        background-position-y: -100px;
+        background-position-x: 100%;
+    }
+}
+
+.box{
+    padding: 15px;
+    height: 100%;
+
+    .presentation{
+        display: grid;
+        height: 100%;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    .intro{
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .details{
+        grid-row: 2;
+        align-self: flex-end;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .link{
+            padding: 0;
+            border: none;
+            text-decoration: underline;
+        }
+    }
+
+    .illustration{
+        display: none;
+    }
+
+    .occupation{
+        color: var(--green-200);
+    }
+
+    @include md{
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        .illustration{
+            display: block;
+            width: 400px;
+            aspect-ratio: 1;
+        }
+
+        .presentation{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            height: auto;
+        }
+        .details{
+            grid-row: 2;
+            align-self: initial;
+            padding-bottom: 20px;
+        }
+
+        .occupation{
+            color: var(--purple);
+            font-size: $large;
+        }
+    }
+}

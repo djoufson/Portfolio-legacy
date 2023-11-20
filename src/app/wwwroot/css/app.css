@@ -113,12 +113,13 @@ table {
   --dark-600: #011627;
   --dark-300: #011221;
   --gray: #607B96;
-  --green-500: #3C9D93;
   --purple: #4D5BCE;
   --white: #FFFFFF;
+  --white-200: #E5E9F0;
   --white-50: rgba(255, 255, 255, 0.2196078431);
   --orange-200: #FEA55F;
   --orange-50: #fbb37c;
+  --green-500: #3C9D93;
   --green-200: #43D9AD;
   --red-200: #E99287;
   --blue-200: #C98BDF;
@@ -128,7 +129,7 @@ table {
 /* ==== GLOBAL STYLES ==== */
 body {
   background-color: var(--dark-900);
-  color: var(--gray);
+  color: var(--white-200);
   padding: 20px;
   font-family: "Fira Code", monospace;
 }
@@ -159,6 +160,17 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+.prompt::before {
+  content: "> ";
+}
+
+.comment {
+  color: var(--gray);
+}
+.comment::before {
+  content: "// ";
+}
+
 .link {
   padding: 0.8rem 2rem;
   color: var(--gray);
@@ -170,7 +182,23 @@ body {
   transition: all ease 0.4s;
 }
 .link.active {
-  color: var(--white);
+  color: var(--white-200);
+}
+
+.label-text {
+  font-size: 0.85rem;
+}
+
+.body-text {
+  font-size: 1rem;
+}
+
+.headline-text {
+  font-size: 3.7rem;
+}
+
+.subheadline-text {
+  font-size: 1.8rem;
 }
 
 /* ==== COMPONENTS ==== */
@@ -350,6 +378,7 @@ footer {
 }
 .footer > span {
   padding-left: 14px;
+  color: var(--gray);
 }
 .footer .socials {
   display: flex;
@@ -392,5 +421,84 @@ footer {
   }
   .footer .link.last {
     border-right: 1px solid var(--lines);
+  }
+}
+
+/* ==== PAGES DESIGN ==== */
+.hero {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/assets/BackgroundBlurs.png);
+  background-repeat: no-repeat;
+}
+@media (min-width: 730px) {
+  .hero {
+    background-position-y: -100px;
+    background-position-x: 100%;
+  }
+}
+
+.box {
+  padding: 15px;
+  height: 100%;
+}
+.box .presentation {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 2fr 1fr;
+}
+.box .intro {
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+.box .details {
+  grid-row: 2;
+  align-self: flex-end;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.box .details .link {
+  padding: 0;
+  border: none;
+  text-decoration: underline;
+}
+.box .illustration {
+  display: none;
+}
+.box .occupation {
+  color: var(--green-200);
+}
+@media (min-width: 730px) {
+  .box {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  .box .illustration {
+    display: block;
+    width: 400px;
+    aspect-ratio: 1;
+  }
+  .box .presentation {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: auto;
+  }
+  .box .details {
+    grid-row: 2;
+    align-self: initial;
+    padding-bottom: 20px;
+  }
+  .box .occupation {
+    color: var(--purple);
+    font-size: 1.8rem;
   }
 }
