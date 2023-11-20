@@ -574,3 +574,14 @@ footer {
 .about h1 {
   padding: 1rem 2rem;
 }
+@media (min-width: 730px) {
+  .about .navigation-toggle {
+    display: block;
+  }
+  .about .toggle-shared-content {
+    display: block;
+  }
+  .about .mobile-toggle {
+    display: none;
+  }
+}

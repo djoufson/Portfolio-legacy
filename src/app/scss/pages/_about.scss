@@ -11,4 +11,18 @@
     h1{
         padding: $padding-sm $padding;
     }
+
+    @include md{    
+        .navigation-toggle{
+            display: block;
+        }
+
+        .toggle-shared-content{
+            display: block;
+        }
+
+        .mobile-toggle{
+            display: none;
+        }
+    }
 }
