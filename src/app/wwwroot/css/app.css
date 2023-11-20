@@ -155,6 +155,22 @@ body {
 
 .page {
   min-height: min(900px, 100vh - 40px);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.link {
+  padding: 0.8rem 2rem;
+  color: var(--gray);
+  border-bottom: 1px solid var(--lines);
+  transition: all ease 0.4s;
+}
+.link:hover {
+  color: var(--white);
+  transition: all ease 0.4s;
+}
+.link.active {
+  color: var(--white);
 }
 
 /* ==== COMPONENTS ==== */
@@ -221,14 +237,6 @@ body {
   display: flex;
   flex-direction: column;
   transition: all ease 0.4s;
-}
-.nav-bar .link {
-  padding: 0.8rem 2rem;
-  color: var(--gray);
-  border-bottom: 1px solid var(--lines);
-}
-.nav-bar .link.active {
-  color: var(--white);
 }
 .nav-bar.active {
   max-height: 100vh;
@@ -328,4 +336,61 @@ body {
 .hamburger span.active::after {
   transform: rotate(90deg);
   transition: all ease 0.4s;
+}
+
+footer {
+  grid-row: 3;
+}
+
+.footer {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto auto;
+  border-top: 1px solid var(--lines);
+}
+.footer > span {
+  padding-left: 14px;
+}
+.footer .socials {
+  display: flex;
+  align-items: center;
+}
+.footer .socials li {
+  display: flex;
+  align-items: center;
+}
+.footer .github span {
+  display: none;
+}
+.footer .link {
+  border: none;
+  border-left: 1px solid var(--lines);
+  padding: 0.8rem;
+}
+.footer .link svg {
+  width: 20px;
+  aspect-ratio: 1;
+  color: inherit;
+  fill: var(--gray);
+}
+@media (min-width: 730px) {
+  .footer {
+    grid-template-columns: auto auto 1fr auto;
+  }
+  .footer > span {
+    min-width: 250px;
+  }
+  .footer .github {
+    grid-column: 4;
+  }
+  .footer .github a {
+    display: flex;
+    gap: 15px;
+  }
+  .footer .github span {
+    display: block;
+  }
+  .footer .link.last {
+    border-right: 1px solid var(--lines);
+  }
 }

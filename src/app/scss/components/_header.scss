@@ -25,16 +25,6 @@
         transition: $transition;
     }
 
-    .link{
-        padding: .8rem 2rem;
-        color: var(--gray);
-        border-bottom: 1px solid var(--lines);
-
-        &.active{
-            color: var(--white);
-        }
-    }
-
     &.active{
         max-height: 100vh;
         transition: $transition;

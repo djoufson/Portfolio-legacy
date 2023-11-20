@@ -1,0 +1,63 @@
+footer{
+    grid-row: 3;
+}
+.footer{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto auto;
+    border-top: 1px solid var(--lines);
+    >span{
+        padding-left: 14px;
+    }
+
+    .socials{
+        display: flex;
+        align-items: center;
+
+        li{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .github{
+        span{
+            display: none;
+        }
+    }
+
+    .link{
+        border: none;
+        border-left: 1px solid var(--lines);
+        padding: .8rem;
+        svg{
+            width: 20px;
+            aspect-ratio: 1;
+            color: inherit;
+            fill: var(--gray);
+        }
+    }
+
+    @include md{
+        grid-template-columns: auto auto 1fr auto;
+        >span{
+            min-width: 250px;
+        }
+
+        .github{
+            grid-column: 4;
+
+            a{
+                display: flex;
+                gap: 15px;
+            }
+            span{
+                display: block;
+            }
+        }
+
+        .link.last{
+            border-right: 1px solid var(--lines);
+        }
+    }
+}
