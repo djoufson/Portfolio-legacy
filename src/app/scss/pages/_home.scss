@@ -1,3 +1,4 @@
+/* Home page */
 .hero{
     height: 100%;
     display: flex;
@@ -12,10 +13,8 @@
     }
 }
 
-.box{
-    padding: 15px;
+.hero .box{
     height: 100%;
-
     .presentation{
         display: grid;
         height: 100%;

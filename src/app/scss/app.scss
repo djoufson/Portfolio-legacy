@@ -1,6 +1,5 @@
 /* ==== GLOBAL STYLES ==== */
 @import 'resets';
-
 @import 'variables';
 @import 'breakpoints';
 
@@ -12,8 +11,10 @@
 
 /* ==== COMPONENTS ==== */
 @import 'components/buttons';
+@import 'components/toggle';
 @import 'components/header';
 @import 'components/footer';
 
 /* ==== PAGES DESIGN ==== */
 @import 'pages/home';
+@import 'pages/about';

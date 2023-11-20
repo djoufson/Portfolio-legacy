@@ -1,0 +1,60 @@
+.toggle{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+
+    .toggle-item{
+        display: flex;
+        flex-direction: column;
+        max-height: 35px;
+        overflow: hidden;
+        transition: $transition;
+
+        .toggle-title{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            height: 35px;
+            width: 100%;
+            color: var(--white-200);
+            background-color: var(--lines);
+            font-family: 'Fira Code', monospace;
+            font-size: $small;
+            cursor: pointer;
+            padding: 0 $padding;
+
+            img{
+                transition: $transition;
+            }
+
+            h2{
+                height: 35px;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .toggle-content{
+            padding: $padding-sm $padding;
+        }
+
+        &.active{
+            max-height: 80vh;
+            overflow: hidden;
+            transition: $transition;
+
+            .toggle-content{
+                max-height: 100%;
+                overflow: scroll;
+            }
+
+            .toggle-title{
+                img{
+                    transform: rotate(90deg);
+                    transition: $transition;
+                }
+            }
+        }
+    }
+}

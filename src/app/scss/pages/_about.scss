@@ -1,0 +1,14 @@
+/* About page */
+.about{
+    .navigation-toggle{
+        display: none;
+    }
+
+    .toggle-shared-content{
+        display: none;
+    }
+
+    h1{
+        padding: $padding-sm $padding;
+    }
+}

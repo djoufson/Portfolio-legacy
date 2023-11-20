@@ -20,6 +20,11 @@
     }
 }
 
+.box{
+    padding: 15px;
+    min-height: 100%;
+}
+
 .page{
     min-height: min(900px, calc(100vh - 40px));
     display: grid;
@@ -51,6 +56,10 @@
     &.active{
         color: var(--white-200);
     }
+}
+
+.mini-text{
+    font-size: $mini;
 }
 
 .label-text{

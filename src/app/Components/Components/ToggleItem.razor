@@ -1,0 +1,23 @@
+<div class="toggle-item @ActiveClass">
+    <div class="toggle-title" @onclick=ToggleClicked>
+        <img src="/assets/toggleArrow.png" alt="">
+        <h2>@Title</h2>
+    </div>
+    <div class="toggle-content">
+        @ChildContent
+    </div>
+</div>
+
+@code{
+    [Parameter]
+    public string Title { get; set; } = string.Empty;
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+    private string ActiveClass = string.Empty;
+
+    private void ToggleClicked()
+    {
+        ActiveClass = ActiveClass == string.Empty ? "active" : string.Empty;
+    }
+}
