@@ -1,6 +1,6 @@
 @rendermode InteractiveServer
 
-<nav class="nav-bar @ActiveClass">
+<nav class="nav-bar @ActiveClass active-link-@ActiveLink">
     <div class="name">
         <a class="link" href="/">djoufson-che</a>
         <button class="hamburger" @onclick=OnToggleClicked>
@@ -8,18 +8,23 @@
         </button>
     </div>
     <ul class="nav-links">
-        <a href="/" class="prefix-underscore link active">hello</a>
-        <a href="/about" class="prefix-underscore link">about-me</a>
-        <a href="/" class="prefix-underscore link last-link">projects</a>
+        <a href="/" class="prefix-underscore link link-1" @onclick="() => OnNavigation(1)">hello</a>
+        <a href="/about" class="prefix-underscore link link-2" @onclick="() => OnNavigation(2)">about-me</a>
+        <a href="/projects" class="prefix-underscore link last-link link-3" @onclick="() => OnNavigation(3)">projects</a>
     </ul>
     <div class="contact">
-        <a href="/" class="prefix-underscore link">contact-me</a>
+        <a href="/contact" class="prefix-underscore link link-4" @onclick="() => OnNavigation(4)">contact-me</a>
     </div>
-    @* Footer here *@
 </nav>
 
 @code{
     private string ActiveClass = string.Empty;
+    private int ActiveLink = 1;
+
+    private void OnNavigation(int linkIndex)
+    {
+        ActiveLink = linkIndex;
+    }
 
     private void OnToggleClicked()
     {

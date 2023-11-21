@@ -353,11 +353,44 @@ body {
     border-bottom: 0.2rem solid transparent;
     border-top: 0.2rem solid transparent;
   }
-  .nav-bar .nav-links .link.active {
-    border-bottom: 0.15rem solid var(--orange-200);
-  }
   .nav-bar .nav-links .last-link {
     border-right: 1px solid var(--lines);
+  }
+  .nav-bar.active-link-1 .link-1 {
+    color: var(--white-200);
+    border-bottom: 0.15rem solid var(--orange-200);
+  }
+  .nav-bar.active-link-2 .link-2 {
+    color: var(--white-200);
+    border-bottom: 0.15rem solid var(--orange-200);
+  }
+  .nav-bar.active-link-3 .link-3 {
+    color: var(--white-200);
+    border-bottom: 0.15rem solid var(--orange-200);
+  }
+  .nav-bar.active-link-4 .link-4 {
+    color: var(--white-200);
+    border-bottom: 0.15rem solid var(--orange-200);
+  }
+  .nav-bar.active-link-5 .link-5 {
+    color: var(--white-200);
+    border-bottom: 0.15rem solid var(--orange-200);
+  }
+  .nav-bar.active-link-6 .link-6 {
+    color: var(--white-200);
+    border-bottom: 0.15rem solid var(--orange-200);
+  }
+  .nav-bar.active-link-7 .link-7 {
+    color: var(--white-200);
+    border-bottom: 0.15rem solid var(--orange-200);
+  }
+  .nav-bar.active-link-8 .link-8 {
+    color: var(--white-200);
+    border-bottom: 0.15rem solid var(--orange-200);
+  }
+  .nav-bar.active-link-9 .link-9 {
+    color: var(--white-200);
+    border-bottom: 0.15rem solid var(--orange-200);
   }
   .nav-bar .contact {
     display: flex;
@@ -367,7 +400,6 @@ body {
     z-index: initial;
   }
   .nav-bar .contact .link {
-    border-bottom: none;
     border-left: 1px solid var(--lines);
   }
   .nav-bar .name {
