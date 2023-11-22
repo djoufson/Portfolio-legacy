@@ -2,6 +2,8 @@
 
 Welcome to the source code repository of my personal portfolio website. This website is built using the brand new Blazor SSR, showcasing my skills, projects, and experiences.
 
+![Screenshot](/docs/screenshot.png)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
