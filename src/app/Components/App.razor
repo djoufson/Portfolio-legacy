@@ -2,14 +2,35 @@
 <html lang="en">
 
 <head>
+    <base href="/" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="/" />
+    <meta
+        name="description"
+        content="Hi, I am Djoufson, a .NET Developer and this is my personal website. Welcome to my amazing world">
+    <meta http-equiv="cache-control" content="max-age=86400">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Djoufson's amazing Portfolio ✨">
+    <meta property="og:description" content="Hi, I am Djoufson, a .NET Developer and this is my personal website. Welcome to my increadible world">
+    <meta property="og:image" content="https://djoufson.azurewebsites.net/assets/djoufson.png">
+    <meta property="og:url" content="https://djoufson.azurewebsites.net">
+
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Djoufson's amazing Portfolio ✨">
+    <meta name="twitter:description" content="Hi, I am Djoufson, a .NET Developer and this is my personal website. Welcome to my increadible world">
+    <meta name="twitter:image" content="https://djoufson.azurewebsites.net/assets/djoufson.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
     <link rel="stylesheet" href="css/app.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="/references/schemaMarkup.json" type="application/ld+json">
+    </script>
     <HeadOutlet />
 </head>
 

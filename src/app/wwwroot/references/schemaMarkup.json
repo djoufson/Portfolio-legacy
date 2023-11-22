@@ -1,0 +1,48 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Djoufson CHE",
+    "url": "https://djoufson.azurewebsites.net",
+    "image": "https://djoufson.azurewebsites.net/assets/djoufson.png",
+    "jobTitle": ".NET Developer",
+    "worksFor": {
+        "@type": "Company",
+        "name": "Infinite Solutions",
+        "url": "https://isolutions-intl.com"
+    },
+    "description": "I am a pretty skilled .NET developer with expertise in building large applications and services.",
+    "sameAs": [
+        "https://www.linkedin.com/in/djoufson",
+        "https://github.com/Djoufson"
+    ],
+    "memberOf": {
+        "@type": "Organization",
+        "name": "Dotnet Foundation",
+        "url": "https://dotnetfoundation.org"
+    },
+    "knowsAbout": [
+        ".NET Core",
+        "C#",
+        "ASP.NET",
+        "MVC",
+        "Razor Pages",
+        "SQL Server",
+        "Azure",
+        "Microsoft"
+    ],
+    "hasOccupation": {
+        "@type": "Occupation",
+        "name": ".NET Developer",
+        "description": "Develops and maintains .NET applications at large scale"
+    },
+    "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Ecole Nationale Superieure Polytechnique de Douala",
+        "url": "https://enspd.cm"
+    },
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+237 699254549",
+        "contactType": "customer support"
+    }
+}
