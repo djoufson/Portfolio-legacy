@@ -122,4 +122,3 @@ I would like to express my gratitude to the following individuals and resources 
 
 - **Open Source Community:** I want to personally thank [Yanka Darelova](https://twitter.com/YankaDarelova) for the amazing free Figma design I used. You can use the same if you want, it is available [here](https://www.figma.com/community/file/1100794861710979147). Give a like ❤️
 
-- **[Any other individual or tool]:** Acknowledge any other person, team, or tool that played a significant role in the development process.
