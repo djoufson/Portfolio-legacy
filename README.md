@@ -77,7 +77,7 @@ dotnet run --project src/app
 1. Launch the Docker Desktop software and wait for it to start
 2. Run the application:
 ``` bash
-docker-compose up`
+docker-compose up
 ```
 
 ## Usage
