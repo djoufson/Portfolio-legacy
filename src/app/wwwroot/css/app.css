@@ -603,6 +603,7 @@ footer {
     display: block;
     width: 400px;
     aspect-ratio: 1;
+    border-radius: 50%;
   }
   .hero .box .presentation {
     display: flex;
