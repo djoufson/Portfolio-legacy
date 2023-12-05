@@ -572,6 +572,7 @@ footer {
   flex-direction: column;
   gap: 15px;
   justify-content: center;
+  line-height: 3.4rem;
 }
 .hero .box .details {
   grid-row: 2;
