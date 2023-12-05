@@ -1,54 +1,19 @@
 @page "/about"
-@rendermode InteractiveServer
 
 <div class="about">
-    <h1 class="mini-text prefix-underscore">about-me</h1>
-    <Toggle Class="mobile-toggle">
-        <ToggleItem Title="Personnal Infos">
-            <PersonnalInfos/>
-        </ToggleItem>
-        <ToggleItem Title="Professionnal Infos">
-            <ProfessionalInfos/>
-        </ToggleItem>
-        <ToggleItem Title="Hobbies">
-            <Hobbies/>
-        </ToggleItem>
-        <ToggleItem Title="Contacts">
-            <Contacts/>
-        </ToggleItem>
-    </Toggle>
-
-    <aside class="navigation-toggle active-@TabIndex">
-        <h2 @onclick="() => Navigate(0)" class="link-0">Personnal Infos</h2>
-        <h2 @onclick="() => Navigate(1)" class="link-1">Professionnal Infos</h2>
-        <h2 @onclick="() => Navigate(2)" class="link-2">Hobbies Infos</h2>
-        <h2 @onclick="() => Navigate(3)" class="link-3">Contacts</h2>
-    </aside>
-    <div class="toggle-shared-content">
-        @switch(TabIndex){
-            case 0:
-                <PersonnalInfos/>
-                break;
-            case 1:
-                <ProfessionalInfos/>
-                break;
-            case 2:
-                <Hobbies/>
-                break;
-            case 3:
-                <Contacts/>
-                break;
-            default:
-                <PersonnalInfos/>
-                break;
-        }
+    <div class="box">
+        <div class="about-me">
+            <div class="content">
+                <h1 class="mini-text prefix-underscore">about-me</h1>
+                <h2>I am <strong>Djoufson CHE</strong>, a <span>.NET Developer</span> and <span>Microsoft Learn Student Ambassador.</span></h2>
+                <p>I am curently working at a <a href="https://isolutions-intl.com" class="link-text">Infinite Solutions</a> as a Backend Developer, and I sometimes do freelance. When I am not busy with work, I write blog posts and help people around me to better understand C# and .NET</p>
+                <p>I created a community, the <a href="https://github.com/dotnetcameroon" class="link-text">.NET Cameroon</a>, with the aim of opening new areas to the cameroonian .NET developers. I also am a member of the <a href="https://dotnetfounfation.org" class="link-text">.NET Foundation</a> community, which helps me enhance my online visibility, to reach more and more people around the world.</p>
+            </div>
+            <div class="side">
+                <img src="assets/djoufson.png" alt="Djoufson's avatar">
+                <Skills/>
+            </div>
+        </div>
+        <div class="certifications"></div>
     </div>
 </div>
-@code{
-    private int TabIndex = 0;
-
-    private void Navigate(int tabIndex)
-    {
-        TabIndex = tabIndex;
-    }
-}

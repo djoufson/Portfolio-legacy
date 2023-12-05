@@ -23,6 +23,10 @@
 .box{
     padding: 15px;
     min-height: 100%;
+
+    @include md{
+        padding: 6rem;
+    }
 }
 
 .page{
@@ -56,6 +60,10 @@
     &.active{
         color: var(--white-200);
     }
+}
+
+.link-text{
+    text-decoration: underline;
 }
 
 .mini-text{

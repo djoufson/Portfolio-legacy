@@ -1,0 +1,29 @@
+@rendermode InteractiveServer
+
+<div class="skills">
+    <h1 class="mini-text prefix-underscore">skills</h1>
+    <div class="items">
+        @foreach(var item in SkillItems)
+        {
+            <Skill
+                Link=@item.Link
+                IconUrl=@item.IconUrl
+                Name=@item.Name/>
+        }
+    </div>
+</div>
+
+@code{
+    private readonly SkillItem[] SkillItems = [
+        new("C#", "#", "csharp"),
+        new(".NET Core", "#", "csharp"),
+        new(".NET MAUI", "#", "csharp"),
+        new("Azure", "#", "csharp"),
+        new("Azure Devops", "#", "csharp")
+    ];
+
+    private record SkillItem(
+        string Name,
+        string Link,
+        string IconUrl);
+}

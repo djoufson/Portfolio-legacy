@@ -1,0 +1,14 @@
+<div class="skill">
+    <a href=@Link>
+        <img src=@IconUrl alt=@Name>
+    </a>
+</div>
+
+@code{
+    [Parameter]
+    public string Link { get; set; } = string.Empty;
+    [Parameter]
+    public string IconUrl { get; set; } = string.Empty;
+    [Parameter]
+    public string? Name { get; set; } = string.Empty;
+}

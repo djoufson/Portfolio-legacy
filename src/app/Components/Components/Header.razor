@@ -2,18 +2,18 @@
 
 <nav class="nav-bar @ActiveClass active-link-@ActiveLink">
     <div class="name">
-        <a class="link" href="/">djoufson-che</a>
+        <a class="link" href="/" target="_parent" @onclick="() => OnNavigation(1)">djoufson-che</a>
         <button class="hamburger" @onclick=OnToggleClicked>
             <span class=@ActiveClass></span>
         </button>
     </div>
     <ul class="nav-links">
-        <a href="/" class="prefix-underscore link link-1" @onclick="() => OnNavigation(1)">hello</a>
-        <a href="/about" class="prefix-underscore link link-2" @onclick="() => OnNavigation(2)">about-me</a>
-        <a href="/projects" class="prefix-underscore link last-link link-3" @onclick="() => OnNavigation(3)">projects</a>
+        <a href="/" target="_parent" class="prefix-underscore link link-1" @onclick="() => OnNavigation(1)">hello</a>
+        <a href="/about" target="_parent" class="prefix-underscore link link-2" @onclick="() => OnNavigation(2)">about-me</a>
+        <a href="/projects" target="_parent" class="prefix-underscore link last-link link-3" @onclick="() => OnNavigation(3)">projects</a>
     </ul>
     <div class="contact">
-        <a href="/contact" class="prefix-underscore link link-4" @onclick="() => OnNavigation(4)">contact-me</a>
+        <a href="/contact" target="_parent" class="prefix-underscore link link-4" @onclick="() => OnNavigation(4)">contact-me</a>
     </div>
 </nav>
 
