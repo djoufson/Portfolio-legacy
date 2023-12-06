@@ -4,7 +4,7 @@
     "name": "Djoufson CHE",
     "url": "https://djoufson.azurewebsites.net",
     "image": "https://djoufson.azurewebsites.net/assets/djoufson.png",
-    "jobTitle": ".NET Developer",
+    "jobTitle": ".NET Developer | Software Engineer",
     "worksFor": {
         "@type": "Company",
         "name": "Infinite Solutions",
@@ -32,7 +32,7 @@
     ],
     "hasOccupation": {
         "@type": "Occupation",
-        "name": ".NET Developer",
+        "name": ".NET Developer | Software Engineer",
         "description": "Develops and maintains .NET applications at large scale"
     },
     "alumniOf": {
