@@ -2,6 +2,7 @@
 footer{
     grid-row: 3;
 }
+
 .footer{
     display: grid;
     align-items: center;
@@ -51,6 +52,7 @@ footer{
 
             a{
                 display: flex;
+                align-items: center;
                 gap: 15px;
             }
             span{
@@ -62,4 +64,9 @@ footer{
             border-right: 1px solid var(--lines);
         }
     }
+}
+
+img.brand{
+    height: 20px;
+    width: auto;
 }

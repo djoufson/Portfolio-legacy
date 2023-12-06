@@ -517,6 +517,7 @@ footer {
   }
   .footer .github a {
     display: flex;
+    align-items: center;
     gap: 15px;
   }
   .footer .github span {
@@ -525,6 +526,11 @@ footer {
   .footer .link.last {
     border-right: 1px solid var(--lines);
   }
+}
+
+img.brand {
+  height: 20px;
+  width: auto;
 }
 
 /* Skills */
