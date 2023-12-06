@@ -2,6 +2,11 @@
 
 .about{
     color: var(--white-200);
+    min-height: 100%;
+    background-image: url(/assets/BackgroundBlurs.png);
+    background-position: 0 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     .about-me{
         img{
             width: 100%;
@@ -13,9 +18,13 @@
             margin-bottom: 2rem;
         }
 
+        .skills{
+            margin-top: 2rem;
+        }
+
         @include md{
             display: flex;
-            gap: 3rem;
+            gap: 8rem;
             width: 100%;
 
             >*{
@@ -27,13 +36,17 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: start;
-            }
 
-            img{
-                width: 60%;
-                aspect-ratio: 1;
-                border-radius: 50%;
+                > img{
+                    width: 60%;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                }
             }
+        }
+
+        @include sm{
+            gap: 4rem;
         }
     }
 }

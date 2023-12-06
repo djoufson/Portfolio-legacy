@@ -1,0 +1,20 @@
+/* Development page */
+
+@keyframes infinite-spin {
+    from { transform: rotate(0);}
+    to { transform: rotate(360deg); }
+}
+
+.development{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .icon{
+        font-size: 10rem;
+        aspect-ratio: 1;
+        animation: infinite-spin infinite 1s;
+    }
+}

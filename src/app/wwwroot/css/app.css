@@ -528,17 +528,20 @@ footer {
 }
 
 /* Skills */
-.skills {
-  margin: 2rem 0;
-}
 .skills .items {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
+  gap: 1rem;
 }
-.skills .skill img {
-  width: 50px;
-  height: 50px;
+.skills .items .skill img {
+  width: auto;
+  height: 2.7rem;
+}
+@media (min-width: 730px) {
+  .skills .items .skill img {
+    width: auto;
+    height: 3.7rem;
+  }
 }
 
 /* ==== PAGES DESIGN ==== */
@@ -625,6 +628,11 @@ footer {
 /* About page */
 .about {
   color: var(--white-200);
+  min-height: 100%;
+  background-image: url(/assets/BackgroundBlurs.png);
+  background-position: 0 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .about .about-me img {
   width: 100%;
@@ -634,10 +642,13 @@ footer {
 .about .about-me p {
   margin-bottom: 2rem;
 }
+.about .about-me .skills {
+  margin-top: 2rem;
+}
 @media (min-width: 730px) {
   .about .about-me {
     display: flex;
-    gap: 3rem;
+    gap: 8rem;
     width: 100%;
   }
   .about .about-me > * {
@@ -649,9 +660,36 @@ footer {
     align-items: center;
     justify-content: start;
   }
-  .about .about-me img {
+  .about .about-me .side > img {
     width: 60%;
     aspect-ratio: 1;
     border-radius: 50%;
   }
+}
+@media (min-width: 480px) {
+  .about .about-me {
+    gap: 4rem;
+  }
+}
+
+/* Development page */
+@keyframes infinite-spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.development {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.development .icon {
+  font-size: 10rem;
+  aspect-ratio: 1;
+  animation: infinite-spin infinite 1s;
 }
