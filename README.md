@@ -2,6 +2,8 @@
 
 Welcome to the source code repository of my personal portfolio website. This website is built using the brand new Blazor SSR, showcasing my skills, projects, and experiences.
 
+[Visit the site here 🌍](https://djoufson-tech.azurewebsites.net)
+
 ![Screenshot](/docs/screenshot.png)
 
 ## Table of Contents
@@ -40,51 +42,66 @@ Read carefully the License
 
 ### Prerequisites
 
-**For local development**
+### **For local development**
+
 - [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) installed
 - [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/) for development (optional)
 
-**Inside Docker Container**
+### **Inside Docker Container**
+
 - [Docker Desktop](https://docs.docker.com/engine/install/) installed
 
 ### Installation
 
-1. Clone the repository: 
-``` shell
-git clone https://github.com/Djoufson/Portfolio.git
-```
-2. Navigate to the project folder:
-``` shell
-cd Portfolio
-```
+- Clone the repository:
+
+  ``` shell
+  git clone https://github.com/Djoufson/Portfolio.git
+  ```
+
+- Navigate to the project folder:
+
+  ``` shell
+  cd Portfolio
+  ```
 
 ### Run
-**Locally**
-1. Restore dependencies: 
-``` bash
-dotnet restore
-```
-2. Build the project:
-``` bash
-dotnet build
-```
-3. Run the application:
-``` bash
-dotnet run --project src/app
-```
 
-**Inside Docker Container**
-1. Launch the Docker Desktop software and wait for it to start
-2. Run the application:
-``` bash
-docker-compose up
-```
+### **Locally**
+
+- Restore dependencies:
+
+  ``` bash
+  dotnet restore
+  ```
+
+- Build the project:
+
+  ``` bash
+  dotnet build
+  ```
+
+- Run the application:
+
+  ``` bash
+  dotnet run --project src/app
+  ```
+
+### **Inside Docker Container-**
+
+- Launch the Docker Desktop software and wait for it to start
+- Run the application:
+
+  ``` bash
+  docker-compose up
+  ```
 
 ## Usage
 
 Customize the content of the website to reflect your personal and professional information. Update the projects, skills, and experiences in the respective sections.
 
 ## Folder Structure
+
 ``` md
 /portfolio
 |-- src/
@@ -123,4 +140,3 @@ If you'd like to contribute, please fork the repository and create a pull reques
 I would like to express my gratitude to the following individuals and resources that have contributed to the development and inspiration of this portfolio website:
 
 - **Open Source Community:** I want to personally thank [Yanka Darelova](https://twitter.com/YankaDarelova) for the amazing free Figma design I used. You can use the same if you want, it is available [here](https://www.figma.com/community/file/1100794861710979147). Give a like ❤️
-
