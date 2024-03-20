@@ -1,6 +1,6 @@
 @rendermode InteractiveServer
 
-<nav class="nav-bar @ActiveClass active-link-@ActiveLink">
+<nav class="nav-bar @ActiveClass">
     <div class="name">
         <a class="link" href="/" target="_parent" @onclick="() => OnNavigation(1)">djoufson-che</a>
         <button class="hamburger" @onclick=OnToggleClicked>
@@ -8,12 +8,12 @@
         </button>
     </div>
     <ul class="nav-links">
-        <a href="/" target="_parent" class="prefix-underscore link link-1" @onclick="() => OnNavigation(1)">hello</a>
-        <a href="/about" target="_parent" class="prefix-underscore link link-2" @onclick="() => OnNavigation(2)">about-me</a>
-        <a href="/projects" target="_parent" class="prefix-underscore link last-link link-3" @onclick="() => OnNavigation(3)">projects</a>
+        <NavLink href="/" target="_parent" class="prefix-underscore link" @onclick="() => OnNavigation(1)">hello</NavLink>
+        <NavLink href="/about" target="_parent" class="prefix-underscore link" @onclick="() => OnNavigation(2)">about-me</NavLink>
+        <NavLink href="/projects" target="_parent" class="prefix-underscore link last-link" @onclick="() => OnNavigation(3)">projects</NavLink>
     </ul>
     <div class="contact">
-        <a href="/contact" target="_parent" class="prefix-underscore link link-4" @onclick="() => OnNavigation(4)">contact-me</a>
+        <NavLink href="/contact" target="_parent" class="prefix-underscore link" @onclick="() => OnNavigation(4)">contact-me</NavLink>
     </div>
 </nav>
 

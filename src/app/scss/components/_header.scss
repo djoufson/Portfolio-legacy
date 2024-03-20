@@ -52,18 +52,13 @@
                 border-bottom: .2rem solid transparent;
                 border-top: .2rem solid transparent;
 
-            }
-            .last-link{
-                border-right: 1px solid var(--lines);
-            }
-        }
-
-        @for $i from 1 through 9 {
-            &.active-link-#{$i}{
-                .link-#{$i}{
+                &.active{
                     color: var(--white-200);
                     border-bottom: .15rem solid var(--orange-200);
                 }
+            }
+            .last-link{
+                border-right: 1px solid var(--lines);
             }
         }
 
